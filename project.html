@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,8 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         * {
             margin: 0;
@@ -18,12 +19,12 @@
         }
 
         body {
-            
-            background-color: #8abbe3;
+
             color: #333;
-          
+            min-height: 100vh;
+
         }
-        
+
         .header {
             position: sticky;
             top: 0;
@@ -37,7 +38,7 @@
             padding: 1rem 5%;
             z-index: 1000;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            
+
         }
 
         .header .logo {
@@ -53,7 +54,8 @@
             gap: 2rem;
             list-style-type: none;
         }
-        .navbar{
+
+        .navbar {
             display: flex;
             width: 70%;
             justify-content: end;
@@ -79,17 +81,20 @@
             font-size: 2rem;
             cursor: pointer;
         }
-         figure h3 {
+
+        figure h3 {
             width: 100%;
             font-size: 1.4rem;
-            display: none ;
+            display: none;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             font-weight: bold;
             padding-left: 20px;
         }
 
-/* header close */
+        /* header close */
 
+
+        
         .projects {
             width: 100%;
             min-height: 100vh;
@@ -97,13 +102,13 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding-top: 100px;
-            background-image: linear-gradient(45deg, rgba(173, 216, 230, 0.552) ,rgba(212, 207, 197, 0.279)),url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQyO00QEJLld2KBcecNcrzuFd5gSIA6SLkOqXK9Q0E4zkXxe5qBp9joFxR49KaCcLp7UA&usqp=CAU);
+            gap: 20px;
+            background-image: linear-gradient(45deg, rgba(173, 216, 230, 0.552), rgba(212, 207, 197, 0.279)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQyO00QEJLld2KBcecNcrzuFd5gSIA6SLkOqXK9Q0E4zkXxe5qBp9joFxR49KaCcLp7UA&usqp=CAU);
             background-repeat: no-repeat;
             background-size: 100% 100%;
         }
 
-       
+
 
         .pro-name {
             display: flex;
@@ -177,7 +182,7 @@
             background-color: #0078a0;
         }
 
-        @media (max-width: 900px) {
+        @media (max-width: 991px) {
             .pro-name div {
                 width: 260px;
                 height: 380px;
@@ -187,7 +192,18 @@
                 font-size: 30px;
                 margin-bottom: 30px;
             }
+            .projects {
+                width: 100%;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+                padding-top: 80px;
+
+            }
         }
+
 
         @media (max-width: 600px) {
 
@@ -196,19 +212,19 @@
                 max-width: 320px;
             }
         }
-    
+
         @media (max-width: 880px) {
             #menu-icon {
                 display: block;
             }
 
-            figure h3{
+            figure h3 {
                 display: block;
 
 
 
             }
-            
+
             .navbar ul {
                 display: none;
                 flex-direction: column;
@@ -219,7 +235,7 @@
                 right: 0;
                 width: 100%;
                 padding: 1rem 0;
-              
+
             }
 
             .navbar ul.active {
@@ -227,97 +243,89 @@
                 padding: 20px;
 
             }
+
             .logo {
                 display: none;
             }
 
-          
 
-           
+
+
         }
 
         @media (max-width: 480px) {
-           div{
-            width: 250px;
-            height: 250px;
-            /* padding: 10px; */
-           }
-           .projects{
-            justify-content: start;
-           }
-           .pro-name{
-                width: 300px;
-                height: 300px;
+            div {
+               width: 90%;
             }
+
+           
+
+           
 
             .navbar a {
                 font-size: 1.2rem;
             }
-            .title{
-                width: 300px; 
+
+            .title {
+                width: 300px;
                 text-align: center;
             }
-            .pro-name{
-                padding: 10px;
+
+            .pro-name {
+                /* padding: 10px; */
                 gap: 10px;
             }
         }
     </style>
 </head>
+
 <body>
 
     <header class="header">
         <a href="#home" class="logo">Abhishek Mishra</a>
         <i class="bx bx-menu" id="menu-icon"></i>
         <nav class="navbar">
-               <figure>
+            <figure>
                 <h3>Abhishek Mishra</h3>
-               </figure>
-               <ul>
+            </figure>
+            <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="project.html">Project</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-           
+
         </nav>
     </header>
-    
+
     <section class="projects" id="projects">
 
-      
-       
         <div class="pro-name">
-               <div>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2VxnuXa5CTwklT3Hoq79nmLhD_JtiZp0OBQ&s" alt="skill">
-                <i class="fa-brands fa-free-code-camp"></i>
-                <p>skill card</p>
-                <p>
-                    I built this project with the help of all my this skills.
-                    This project is a reflection of my skills and dedication.
-                    A reflection of the skills I’ve developed and put to use
-                </p>
-                <a href="skill.html" target="_blank">Demo</a>
-            </div>
+
             <div>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjiiDVxXzHRfDyG-AGu8czSlYlqrx4fyVfQQ&s" alt="Calculator">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjiiDVxXzHRfDyG-AGu8czSlYlqrx4fyVfQQ&s"
+                    alt="Calculator">
                 <i class="fa-solid fa-calculator"></i>
                 <p>Calculator</p>
                 <p>
-                    A calculator that performs arithmetic operations. This calculator supports basic addition, subtraction, multiplication, and division.
+                    A calculator that performs arithmetic operations. This calculator supports basic addition,
+                    subtraction, multiplication, and division.
                 </p>
                 <a href="calculator.html" target="_blank">Demo</a>
             </div>
             <div>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5ADml4c9fuNQiOVmOYWQbLfZXCAZPS3hUbA&s" alt="Employee Card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5ADml4c9fuNQiOVmOYWQbLfZXCAZPS3hUbA&s"
+                    alt="Employee Card">
                 <i class="fa-brands fa-app-store"></i>
                 <p>Employee Card</p>
                 <p>
-                    A tool for creating a professional page to introduce team members with customizable details and styles.
+                    A tool for creating a professional page to introduce team members with customizable details and
+                    styles.
                 </p>
                 <a href="teambuilding.html" target="_blank">Demo</a>
             </div>
             <div>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZG-jZvrAKuZssnv-G3AvqgzxECdkmi9X-Mg&s" alt="Team Card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZG-jZvrAKuZssnv-G3AvqgzxECdkmi9X-Mg&s"
+                    alt="Team Card">
                 <i class="fa-solid fa-id-card"></i>
                 <p>Team Card</p>
                 <p>
@@ -327,7 +335,7 @@
             </div>
         </div>
     </section>
-    
+
     <script>
         const menuIcon = document.getElementById('menu-icon');
         const navbar = document.querySelector('.navbar ul');
@@ -335,6 +343,7 @@
         menuIcon.addEventListener('click', () => {
             navbar.classList.toggle('active');
         });
-        </script>
+    </script>
 </body>
+
 </html>
